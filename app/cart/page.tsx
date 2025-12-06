@@ -47,9 +47,10 @@ export default function CartPage() {
           <span>Continue Shopping</span>
         </Link>
 
-        <h1 className="text-4xl md:text-5xl font-display font-bold text-nike-black mb-8">
-          Shopping Cart ({getTotalItems()} {getTotalItems() === 1 ? &apos;item&apos; : &apos;items&apos;})
-        </h1>
+      <h1 className="text-4xl md:text-5xl font-display font-bold text-nike-black mb-8">
+  Shopping Cart ({getTotalItems()} {getTotalItems() === 1 ? "item" : "items"})
+</h1>
+
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Cart Items */}
