@@ -23,7 +23,7 @@ export default function CartPage() {
               <ShoppingBag className="w-12 h-12 text-gray-400" />
             </div>
             <h1 className="text-3xl font-display font-bold text-nike-black">Your cart is empty</h1>
-            <p className="text-gray-600">Looks like you haven't added anything to your cart yet.</p>
+            <p className="text-gray-600">Looks like you haven&apos;t added anything to your cart yet.</p>
             <Link
               href="/shop"
               className="inline-block bg-nike-black text-white px-8 py-4 rounded-full font-semibold hover:bg-nike-accent transition-colors"
@@ -48,7 +48,7 @@ export default function CartPage() {
         </Link>
 
         <h1 className="text-4xl md:text-5xl font-display font-bold text-nike-black mb-8">
-          Shopping Cart ({getTotalItems()} {getTotalItems() === 1 ? 'item' : 'items'})
+          Shopping Cart ({getTotalItems()} {getTotalItems() === 1 ? &apos;item&apos; : &apos;items&apos;})
         </h1>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
@@ -162,4 +162,3 @@ export default function CartPage() {
     </div>
   );
 }
-
