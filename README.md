@@ -1,4 +1,4 @@
-# Nike Website Redesign
+# Nike Website Redesign ( TASK 3 )
 
 A modern, AI-enhanced redesign of the Nike website built with Next.js, Tailwind CSS, and Firebase.
 
