@@ -59,6 +59,7 @@ export default function SearchModal() {
             className="fixed inset-0 bg-black/50 z-50"
             onClick={handleClose}
           />
+
           <motion.div
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -67,6 +68,7 @@ export default function SearchModal() {
             onClick={(e) => e.stopPropagation()}
           >
             <div className="bg-white rounded-2xl shadow-2xl overflow-hidden">
+
               {/* Search Input */}
               <div className="p-4 border-b">
                 <div className="flex items-center space-x-3">
@@ -92,7 +94,7 @@ export default function SearchModal() {
               <div className="max-h-96 overflow-y-auto">
                 {searchQuery && results.length === 0 ? (
                   <div className="p-8 text-center text-gray-500">
-                    <p>No products found for "{searchQuery}"</p>
+                    <p>No products found for &quot;{searchQuery}&quot;</p>
                   </div>
                 ) : searchQuery && results.length > 0 ? (
                   <div className="p-4 space-y-2">
@@ -112,11 +114,13 @@ export default function SearchModal() {
                             className="object-cover"
                           />
                         </div>
+
                         <div className="flex-1 min-w-0">
                           <h3 className="font-semibold text-nike-black truncate">{product.name}</h3>
                           <p className="text-sm text-gray-500">{product.category}</p>
                           <p className="text-lg font-bold text-nike-black">${product.price}</p>
                         </div>
+
                         <button
                           onClick={(e) => handleAddToCart(e, product)}
                           className="px-4 py-2 bg-nike-black text-white rounded-full text-sm font-semibold hover:bg-nike-accent transition-colors opacity-0 group-hover:opacity-100"
@@ -125,6 +129,7 @@ export default function SearchModal() {
                         </button>
                       </Link>
                     ))}
+
                     {results.length > 5 && (
                       <Link
                         href={`/search?q=${encodeURIComponent(searchQuery)}`}
@@ -148,4 +153,3 @@ export default function SearchModal() {
     </AnimatePresence>
   );
 }
-
