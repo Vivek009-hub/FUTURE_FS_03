@@ -18,7 +18,7 @@ A modern, AI-enhanced redesign of the Nike website built with Next.js, Tailwind 
 - **Animations**: Framer Motion
 - **Icons**: Lucide React
 - **Backend**: Firebase (Firestore, Storage, Auth)
-- **Deployment**: Vercel-ready
+- **Deployment**: Render
 
 ## 📦 Installation
 
@@ -83,10 +83,10 @@ npm run dev
 
 ## 🚀 Deployment
 
-### Vercel (Recommended)
+### Render 
 
 1. Push your code to GitHub
-2. Import your repository in Vercel
+2. Import your repository in Render
 3. Add your environment variables
 4. Deploy!
 
